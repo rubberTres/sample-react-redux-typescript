@@ -1,0 +1,27 @@
+.games-displayer {
+	display: grid;
+	padding: 25px 75px;
+	height: 550px;
+	background-color: $dark-grey;
+	gap: 25px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-size: 50px;
+	color: white;
+
+	@media (max-width: 1250px) {
+		height: 100%;
+		font-size: 30px;
+	}
+
+	@media (max-width: 500px) {
+		padding: 25px;
+		font-size: 20px;
+	}
+
+	&--grid {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-rows: repeat(2, 1fr);
+	}
+}

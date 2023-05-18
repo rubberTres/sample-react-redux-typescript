@@ -1,0 +1,55 @@
+.input {
+	display: flex;
+	background-color: transparent;
+	border: 1px solid $grey;
+	gap: 10px;
+	padding: 10px;
+	align-items: center;
+	border-radius: 5px;
+	width: 100%;
+	position: relative;
+
+	&--error {
+		border-color: red;
+	}
+
+	&--disabled {
+		opacity: .5;
+
+		&:hover {
+			cursor: not-allowed;
+		}
+	}
+
+	&__icon {
+		height: 20px;
+		width: 20px;
+	}
+
+	&__input {
+		border: none;
+		outline: none;
+		font-size: 20px;
+		background-color: transparent;
+		color: $grey;
+		width: 100%;
+		cursor: inherit;
+	}
+
+	&__label {
+		position: absolute;
+		background-color: $dark-grey;
+		padding: 0 5px;
+		top: -9px;
+		left: 10px;
+		color: $grey;
+	}
+
+	&__error {
+		color: red;
+		font-size: 10px;
+		position: absolute;
+		bottom: -5px;
+		padding: 0 5px;
+	}
+}
